@@ -12,7 +12,8 @@
 		38718DB4224906480088B886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38718DB2224906480088B886 /* Main.storyboard */; };
 		38718DB7224906480088B886 /* mockPosition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38718DB5224906480088B886 /* mockPosition.xcdatamodeld */; };
 		38718DB9224906490088B886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38718DB8224906490088B886 /* Assets.xcassets */; };
-		38718DBC224906490088B886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38718DBA224906490088B886 /* LaunchScreen.storyboard */; };
+		38718DBC224906490088B886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38718DBA224906490088B886 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (button, ); }; };
+		38718DC422490B7E0088B886 /* LocationTransfrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38718DC322490B7E0088B886 /* LocationTransfrom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		38718DB8224906490088B886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38718DBB224906490088B886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38718DBD224906490088B886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38718DC322490B7E0088B886 /* LocationTransfrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTransfrom.swift; sourceTree = "<group>"; };
+		38718DC522490BCD0088B886 /* Jingronghui.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Jingronghui.gpx; sourceTree = "<group>"; };
+		38718DC622490E050088B886 /* financial.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = financial.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		38718DAD224906480088B886 /* mockPosition */ = {
 			isa = PBXGroup;
 			children = (
+				38718DC522490BCD0088B886 /* Jingronghui.gpx */,
 				38718DAE224906480088B886 /* AppDelegate.swift */,
 				38718DB0224906480088B886 /* ViewController.swift */,
 				38718DB2224906480088B886 /* Main.storyboard */,
@@ -63,6 +68,8 @@
 				38718DBA224906490088B886 /* LaunchScreen.storyboard */,
 				38718DBD224906490088B886 /* Info.plist */,
 				38718DB5224906480088B886 /* mockPosition.xcdatamodeld */,
+				38718DC322490B7E0088B886 /* LocationTransfrom.swift */,
+				38718DC622490E050088B886 /* financial.gpx */,
 			);
 			path = mockPosition;
 			sourceTree = "<group>";
@@ -93,6 +100,9 @@
 		38718DA3224906480088B886 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					button,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = wfsovereign;
@@ -141,6 +151,7 @@
 				38718DB1224906480088B886 /* ViewController.swift in Sources */,
 				38718DB7224906480088B886 /* mockPosition.xcdatamodeld in Sources */,
 				38718DAF224906480088B886 /* AppDelegate.swift in Sources */,
+				38718DC422490B7E0088B886 /* LocationTransfrom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

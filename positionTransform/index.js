@@ -1,6 +1,7 @@
 const program = require('commander')
 const requestTool = require('./request')
 const gcj2wgs = require('./transform').gcj2wgs
+const gpxTemplate = require('./gpxTemplate')
 
 program
   .version('1.0.0')
@@ -18,7 +19,9 @@ program
         const result = JSON.parse(targetStr).pois[0].location.split(',')
         console.log('lat ---> ', result[1])
         console.log('lon ---> ', result[0])
-        console.log(gcj2wgs(...result.reverse()))
+        const location = gcj2wgs(...result.reverse())
+        console.log(location)
+        console.log(gpxTemplate(location))
       })
       .catch(e => {
         console.log('error ,', e)
